@@ -103,20 +103,20 @@ int multiplicationOperation()
 
 int divisionOperation()
 {
-double firstDivsion, secondDivision, divisionResult;
-cout << "Enter the first number." << endl;
-cin >> firstDivsion;
-cout << "Enter the second number." << endl;
-cin >> secondDivision;
+	double firstDivsion, secondDivision, divisionResult;
+	cout << "Enter the first number." << endl;
+	cin >> firstDivsion;
+	cout << "Enter the second number." << endl;
+	cin >> secondDivision;
 
-// Input validation against divide by zero operations.
-		if (secondDivision == 0)
-		{
-			cout << "Cannot divide by a zero value" << endl;
-		}
-cout << "You entered " << firstDivsion << " and " << secondDivision << endl;
-divisionResult = firstDivsion / secondDivision;
-cout << "The quotient of the numbers entered is: " << divisionResult << endl;
+	// Input validation against divide by zero operations.
+	if (secondDivision == 0)
+	{
+		cout << "Cannot divide by a zero value" << endl;
+	}
+	cout << "You entered " << firstDivsion << " and " << secondDivision << endl;
+	divisionResult = firstDivsion / secondDivision;
+	cout << "The quotient of the numbers entered is: " << divisionResult << endl;
 
-return divisionResult;
+	return divisionResult;
 }
